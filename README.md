@@ -1,3 +1,5 @@
+**De app staat online op [cedricigodt-source.github.io/storydice](https://cedricigodt-source.github.io/storydice/).** Elke wijziging op `main` wordt daar automatisch gepubliceerd.
+
 # Mijn eerste echte project
 
 Dit is een startpunt voor een eigen app of website die je met AI bouwt. Je hebt geen programmeerervaring nodig. De AI schrijft de code; deze template zorgt ervoor dat je project een solide basis krijgt en dat je er later zelfstandig mee verder kan.
