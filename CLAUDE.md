@@ -48,7 +48,13 @@ Tests voor de werking:
 npm test
 ```
 
-Tests met de echte app:
+De browser voor de tests met de echte app installeren (één keer per computer):
+
+```
+npx playwright install chromium
+```
+
+Tests met de echte app (Playwright start zelf de app met Vite):
 
 ```
 npm run test:e2e
@@ -60,4 +66,4 @@ De website bouwen:
 npm run build
 ```
 
-`npm test` voert Vitest één keer uit, zonder te blijven wachten op wijzigingen. Voer de controles uit in de volgorde uit `/work-issue`: lint, tests, tests met de echte app en build.
+`npm test` voert Vitest één keer uit, zonder te blijven wachten op wijzigingen. Tests voor de werking staan naast de code als `src/**/*.test.tsx`, tests met de echte app in `e2e/`. De workflow `.github/workflows/ci.yml` voert dezelfde controles uit bij elke pull request en push naar `main`. Voer de controles uit in de volgorde uit `/work-issue`: lint, tests, tests met de echte app en build.
